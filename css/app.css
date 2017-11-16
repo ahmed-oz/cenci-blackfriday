@@ -58,6 +58,9 @@ ol, ul {
 	display: none;
 }
 /* Form*/
+#mc_embed_signup form {
+	padding: 0 !important;
+}
 #mc_embed_signup #mc_embed_signup_scroll h2 {
     font-size: 1.1em;
 }
@@ -87,13 +90,13 @@ ol, ul {
 	border-bottom: 4px solid #f5821f;
 }
 .footer .title {
-	color: #fff;
-    font-size: 1.4rem;
-    font-weight: 200;
     position: absolute;
     top: 3%;
     left: 50%;
     transform: translate( -50%);
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 200;
 }
 .footer .flip-book {
 	position: absolute;
@@ -110,6 +113,9 @@ ol, ul {
 }
 
 @media (min-width: 992px) { 
+	.p-added {
+		padding: 0 15%;
+	}
 	picture img {
 		width: 100%;
 	}
@@ -118,10 +124,27 @@ ol, ul {
 		margin: 0;
 		border-bottom: 4px solid #f5821f;
 	}
+	.text__title,
+	.text__paragraph {
+		text-align: left;
+	}
+
 	.mobile-none {
 		position: absolute;
     	right: 78px;
     	bottom: 0;
     	display: block;
+	}
+	.footer .title {
+	    top: 30%;
+	    left: 70%;
+	    transform: translate( -30%, -70%);
+	    font-size: 2rem;
+	}
+	.footer .flip-book {
+	    bottom: 50%;
+	    left: 73%;
+	    transform: translate( -63%, -49%);
+	    padding: .375rem .75rem;
 	}
 }
